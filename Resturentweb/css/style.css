@@ -1,0 +1,49 @@
+:root{
+  --bg:#071022; --card:#0b1220; --muted:#94a3b8;
+  --accent1:#ff6b6b; --accent2:#f7a440;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:Inter,Arial,Helvetica;background:linear-gradient(180deg,#071022,#071a2b);color:#e6eef8;min-height:100%}
+.wrap{max-width:1000px;margin:0 auto;padding:16px}
+.topbar{position:sticky;top:0;background:rgba(255,255,255,0.02);backdrop-filter:blur(6px);border-bottom:1px solid rgba(255,255,255,0.03)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between}
+.brand h1{margin:8px 0;font-size:18px}
+nav a{color:#cfe7ff;margin-left:12px;text-decoration:none;font-weight:600}
+
+/* hero */
+.hero{padding:18px 0}
+.hero h2{margin:0 0 6px}
+.muted{color:var(--muted)}
+
+/* grid cards */
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));margin-top:12px}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.02));padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.03);display:flex;flex-direction:column;gap:8px}
+.card img{width:100%;height:140px;object-fit:cover;border-radius:8px}
+.card h4{margin:0;font-size:16px}
+.card p{margin:0;color:var(--muted);font-size:13px}
+.row{display:flex;gap:8px;margin-top:auto}
+
+/* buttons */
+.btn-primary{background:linear-gradient(90deg,var(--accent1),var(--accent2));color:#fff;padding:8px 12px;border-radius:8px;border:0;cursor:pointer}
+.btn-ghost{background:transparent;color:#cfe7ff;padding:8px 12px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);cursor:pointer}
+
+/* cart */
+.cart-list{display:flex;flex-direction:column;gap:10px;margin-top:12px}
+.cart-item{display:flex;gap:12px;align-items:center;padding:10px;border-radius:10px;background:rgba(255,255,255,0.02)}
+.cart-item img{width:72px;height:72px;object-fit:cover;border-radius:8px}
+.cart-footer{display:flex;justify-content:space-between;align-items:center;margin-top:16px}
+
+/* admin */
+.admin-wrap{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:12px}
+.admin-form{background:rgba(255,255,255,0.01);padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+.admin-list{background:transparent;padding:0}
+.admin-form input{width:100%;padding:10px;margin-top:6px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit}
+
+/* footer */
+.footer{margin-top:30px;color:var(--muted);padding:12px;text-align:center}
+
+/* small screens */
+@media(max-width:900px){
+  .grid{grid-template-columns:repeat(auto-fill,minmax(180px,1fr))}
+  .admin-wrap{grid-template-columns:1fr}
+}

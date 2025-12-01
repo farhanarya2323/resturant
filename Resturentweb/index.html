@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Arya Restaurant — Menu</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <div class="brand">
+        <img src="" alt="logo" id="siteLogo" class="logo" style="display:none">
+        <h1>Arya Restaurant</h1>
+      </div>
+      <nav>
+        <a href="index.html">Menu</a>
+        <a href="cart.html">Cart <span id="cartCount">0</span></a>
+        <a href="admin.html">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h2>Delicious • Fast • Fresh</h2>
+      <p>Apna order select karo aur Cash on Delivery choose karo.</p>
+    </section>
+
+    <section class="menu-section">
+      <h3>Menu</h3>
+      <div id="items" class="grid"></div>
+      <div id="noItems" class="muted" style="display:none">Koi item abhi add nahi hua. Admin se add karo.</div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">© <span id="year"></span> Arya Restaurant</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>window.page = 'home';</script>
+</body>
+</html>

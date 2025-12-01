@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Admin — Arya Restaurant</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <div class="brand"><h1>Admin Panel</h1></div>
+      <nav><a href="index.html">View Site</a> <a href="cart.html">Cart</a></nav>
+    </div>
+  </header>
+
+  <main class="wrap admin-wrap">
+    <section class="admin-form">
+      <h3>Add / Edit Product</h3>
+      <form id="productForm">
+        <input type="hidden" id="prodId">
+        <label>नाम<br><input id="name" required></label>
+        <label>विवरण<br><input id="description"></label>
+        <label>कीमत (₹)<br><input id="price" type="number" required></label>
+        <label>Image URL (public)<br><input id="image"></label>
+        <div style="margin-top:8px">
+          <button type="submit" class="btn-primary">Save</button>
+          <button type="button" id="clearBtn" class="btn-ghost">Clear</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="admin-list">
+      <h3>All Products</h3>
+      <div id="adminItems" class="grid"></div>
+      <div id="noAdminItems" class="muted" style="display:none">Koi product nahi mila.</div>
+    </section>
+
+    <section style="margin-top:18px">
+      <h3>Placed Orders (Simulated)</h3>
+      <div id="ordersList"></div>
+      <div id="noOrders" class="muted" style="display:none">Koi order nahi mila.</div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="wrap">Admin • © <span id="year3"></span></div></footer>
+
+  <script src="js/main.js"></script>
+  <script>window.page = 'admin';</script>
+</body>
+</html>

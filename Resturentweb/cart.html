@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cart — Arya Restaurant</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <div class="brand"><h1>Arya Restaurant</h1></div>
+      <nav><a href="index.html">Menu</a> <a href="admin.html">Admin</a></nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section>
+      <h2>Your Cart</h2>
+      <div id="cartItems" class="cart-list"></div>
+      <div id="cartEmpty" class="muted">Cart khaali hai.</div>
+
+      <div class="cart-footer">
+        <div id="totalText">Total: ₹0</div>
+        <button id="placeOrderBtn" class="btn-primary">Place Order (Cash on Delivery)</button>
+      </div>
+
+      <div id="orderMsg" class="muted" style="margin-top:12px"></div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="wrap">© <span id="year2"></span> Arya Restaurant</div></footer>
+
+  <script src="js/main.js"></script>
+  <script>window.page = 'cart';</script>
+</body>
+</html>
